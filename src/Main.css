@@ -1,0 +1,16 @@
+.card {
+    width: 18rem;
+}
+
+.parth {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+
+}
+
+.bapu {
+    margin-bottom: 3rem;
+}
