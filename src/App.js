@@ -1,9 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { Head } from './Head';
+import Slider from './Slider';
+import { Main } from './Main';
+import Footer from './Footer';
+import { Route, Routes } from "react-router-dom";
+import Contact from './Contact';
 
 function App() {
   return <>
-  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente voluptas accusamus quam molestias eaque numquam ea velit excepturi impedit officia odit quae nobis cupiditate rem, ab nulla voluptatum cum?</h1>
+    <Head />
+    <Slider />
+    <Routes>
+      <Route path='/' element={<Main />}></Route>
+      <Route path='/contact' element={<Contact />}></Route>
+    </Routes>
+    <Footer />
   </>
 }
 

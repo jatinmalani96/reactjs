@@ -3,10 +3,10 @@ import slide from './img/1.jpg'
 import slide2 from './img/2.jpg'
 import slide3 from './img/3.jpg'
 
-export const Slider = () => {
-    return (
-
-        <div id="carouselExample" className="carousel slide container">
+const Slider = () => {
+  return (
+    <>
+         <div id="carouselExample" className="carousel slide ">
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img height={'500px'} src={slide} className="d-block w-100" alt="..." />
@@ -27,5 +27,8 @@ export const Slider = () => {
                 <span className="visually-hidden">Next</span>
             </button>
         </div>
-    )
+    </>
+  )
 }
+
+export default Slider
