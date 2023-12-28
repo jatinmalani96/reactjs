@@ -1,7 +1,7 @@
-import React from 'react'
-import slide from './img/1.jpg'
-import slide2 from './img/2.jpg'
-import slide3 from './img/3.jpg'
+import React ,{useState} from 'react'
+import slide from '../img/1.jpg'
+import slide2 from '../img/2.jpg'
+import slide3 from '../img/3.jpg'
 
 const Slider = () => {
   return (
@@ -27,6 +27,7 @@ const Slider = () => {
                 <span className="visually-hidden">Next</span>
             </button>
         </div>
+        
     </>
   )
 }

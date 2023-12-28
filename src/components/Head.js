@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
-
-export const Head = () => {
+const Head = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light">
@@ -20,7 +19,13 @@ export const Head = () => {
                 <Link className="nav-link active" aria-current="page" to={'/contact'}>Contact</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">About</a>
+                <Link className="nav-link active" aria-current="page" to={"/about"}>About</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to={"/demo"}>UseState</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to={"/todo"}>Todo</Link>
               </li>
 
             </ul>
@@ -34,3 +39,5 @@ export const Head = () => {
     </>
   )
 }
+
+export default Head
