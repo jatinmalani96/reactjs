@@ -27,6 +27,12 @@ const Head = () => {
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to={"/todo"}>Todo</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to={"/useEffact"}>UseEffact</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to={"/axios"}>Axios</Link>
+              </li>
 
             </ul>
             <form className="d-flex" role="search">

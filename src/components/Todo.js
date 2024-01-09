@@ -15,6 +15,7 @@ const Todo = () => {
                 let data = [...todo]
                 data[updataIndex] = input
                 setTodo(data)
+                setIndex(null)
             }
 
             document.getElementById("input").value = ""
